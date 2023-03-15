@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="奪われた故郷の星を取り戻せ、壮大なSFファンタジー。銀河歴222年、惑星ネコチャンは、ボスネコ将軍の率いる軍の反乱により完全に制圧された。">
+    <title>Planet Hunters</title>
+    <link rel="icon" type="image/png" href="./favicon.ico">
+    <link rel="icon" type="image/png" href="./icon-192x192.png">
+    <link rel="apple-touch-icon" type="image/png" href="./apple-touch-icon-180x180.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo:wght@500;600;700&amp;family=Noto+Sans+JP:wght@500;900&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+
+
+    <!-- OGP -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Planet Hunters">
+    <meta property="og:url" content="https://webdesigner-go.com/planet-hunters/">
+    <meta property="og:description" content="奪われた故郷の星を取り戻せ、壮大なSFファンタジー。銀河歴222年、惑星ネコチャンは、ボスネコ将軍の率いる軍の反乱により完全に制圧された。">
+    <meta property="og:image" content="https://webdesigner-go.com/planet-hunters/assets/img/ogp.png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/destyle.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!-- SNSシェアボタン読み込み用 -->
+    <!-- facebook -->
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v16.0" nonce="2FWmTivj"></script>
+    <!-- ローディング画面 -->
+    <div class="loading" id="loading" style="display: none;">
+        <div class="loading-animation">
+            <div class="atom-spinner">
+                <div class="spinner-inner">
+                  <div class="spinner-line"></div>
+                  <div class="spinner-line"></div>
+                  <div class="spinner-line"></div>
+                  <!--Chrome renders little circles malformed :(-->
+                  <div class="spinner-circle">
+                    &#9679;
+                  </div>
+                </div>
+              </div>
+
+            <p class="loading-text"><img src="./assets/img/loading.svg" alt="ローディング"></p>
+        </div>
+    </div>
+
+    <!-----------------------------------------------------------------------
+                               トップページ
+    ------------------------------------------------------------------------->
+    <!-- 背景のビデオ -->
+    <div class="mv-bg">
+        <video class="mv-bg-video" plalysinline muted autoplay loop>
+            <source src="./assets/video/bg_movie.mp4" type="video/mp4">
+        </video>
+    </div>
+    <!-- ヘッダー -->
+    <header class="header">
+        <div class="header-wrap">
+            <div class="header-logo">
+                <a href="index.html">
+                    <img class="logo" src="./assets/img/logo.svg"></div>
+                </a>
+
+            <nav class="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#story" class="page-link">STORY</a></li>
+                    <li class="nav-item"><a href="#trailer" class="page-link">TRAILER</a></li>
+                    <li class="nav-item"><a href="#mv" class="page-link playnow">PLAY NOW</a></li>
+                </ul>
+                <!-- 音楽 -->
+                <div class="audio-wrap">
+                    <div class="audio-text">
+                        <button class="soundToggle" id="soundToggle">
+                            <span class="soundToggle-text">SOUND OFF</span><span class="soundToggle-icon material-icons-round">volume_up</span>
+                        </button>
+                    </div>
+                    <audio id="audio" loop>
+                        <source src="./assets/audio/cinematic-melody-main-9785.mp3" type="audio/mp3">
+                    </audio>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- メインビジュアル -->
+    <section class="mv" id="mv" style="height: 100vh;">
+        <div class="container">
+            <div class="top-title-wrap">
+                <h3>VR GAME</h3>
+                <h1>Planet<br>Hubters</h1>
+                <p>惑星を奪還せよ</p>
+                <a href="#mv" class="page-link playnow">PLAY NOW</a>
+            </div>
+        </div>
+
+        <!-- スクロールダウンアイコン -->
+        <div class="scrolldown"><span>Scroll</span></div>
+
+        <!-- ニュースボックス -->
+        <div class="news-box">
+            <p>
+                <span class="news-data">2030.02.20</span>
+                <span class="news-text">バージョン5.6リリース：アバター・アイテム大量追加</span>
+            </p>
+        </div>
+    </section>
+    
+    <main class="content">
+        <!-----------------------------------------------------------------------
+                               ストーリーページ
+        ------------------------------------------------------------------------->
+        <section class="story" id="story">
+            <div class="container">
+                <div class="story-body">
+                    <div class="story-columWrap">
+                        <div class="story-box">
+                            <div class="story-textbox">
+                                <h2 class="page-title">STORY</h2>
+                                <div class="story-text-title">奪われた故郷の星を取り戻せ<br>壮大なSFファンタジー</div>
+                                <div class="story-text">
+                                    <p>
+                                        銀河歴222年、惑星ネコチャンは、ボスネコ将軍の率いる軍の反乱により完全に制圧された。将軍の側近マンチカンは軍政府に従わない人間を辺境の星ニャゴーへ強制的に追放。食料や資源の乏しいニャゴーでは多くの難民が発生し飢餓に苦しんでいた。ニャゴーのスラム街で育った孤児の姉弟がいた。姉のミケと弟のタマは母親をボスネコ将軍に殺された事実を知る。母の復讐のため、そして故郷の惑星ネコチャンを奪還すべく、ミケとタマはいま行動に出る！
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="story-img"><img src="./assets/img/story01.webp" alt="story01"></div>
+                        </div>
+
+                        <div class="story-box">
+                            <div class="story-textbox">
+                                <div class="story-text-title">隠された陰謀を暴け<br>衝撃的な事実に驚愕</div>
+                                <div class="story-text">
+                                    <p>
+                                        ミケとタマはネコジャラシ作戦により軍政府の最新鋭の小型船チュールを奪うことに成功。チュールのハイテンションワープ恒星間航行により惑星ネコチャンへあとわずか３時間で到着という時、小惑星帯アビシニアンで謎の救難信号を受信する。意外にも信号の発信源はボスネコ将軍だった。彼は今にも絶えそうなかすれた声で「私はおまえたちミケとタマの父親なのだ」と語る。その瞬間、ミケとタマの育ての親同然で仲間のはずのホワイトオッドアイがタマの背中を刀で切り裂いたのだった......
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="story-img"><img src="./assets/img/story02.webp" alt="story02"></div>
+                        </div>
+                    </div><!-- /story-columWrap -->
+                </div><!-- /story-body -->
+            </div><!-- /container -->
+        </section>
+
+        <!-----------------------------------------------------------------------
+                                CTAページ
+        ------------------------------------------------------------------------->
+        <section class="cta cta-top">
+            <div class="container">
+                <div class="cta-wrap">
+                    <h2 class="cta-title">ARE YOU READY TO FIGHT?</h2>
+                    <a href="#mv" class="page-link playnow">PLAY NOW</a>
+                </div>
+            </div>
+        </section>
+
+        <!-----------------------------------------------------------------------
+                                トレーラーページ
+        ------------------------------------------------------------------------->
+        <section class="trailer" id="trailer">
+            <div class="container">
+                <div class="trailer-wrap">
+                    <h2 class="page-title">TRAILER</h2>
+                    <!-- YouTube動画設置 -->
+                    <div class="youtube">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/74etMeJ0-x4?start=35" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-----------------------------------------------------------------------
+                                CTAページ
+        ------------------------------------------------------------------------->
+        <section class="cta cta-bottom">
+            <div class="container">
+                <div class="cta-wrap">
+                    <h2 class="cta-title">ARE YOU READY TO FIGHT?</h2>
+                    <a href="#mv" class="page-link playnow">PLAY NOW</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-----------------------------------------------------------------------
+                               フッターページ
+    ------------------------------------------------------------------------->
+    <footer class="footer">
+        <!-- SNSシェアボタン設置 -->
+        <div class="sns-wrap">
+            <!-- facebook -->
+            <div class="facebook">
+                <div class="fb-like" data-href="ここにURL" data-width="50px" data-layout="button_count" data-action="like" data-size="large" data-share="true"></div>
+            </div>
+            
+            <!-- twitter -->
+            <div class="twitter">
+                <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false" data-size="large">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+
+            <!-- line -->
+            <div class="line">
+                <div class="line-it-button" data-lang="ja" data-type="share-b" data-env="REAL" data-url="ここにURL" data-color="default" data-size="small" data-count="false" data-ver="3" style="display: none;"></div>
+                <script src="https://www.line-website.com/social-plugins/js/thirdparty/loader.min.js" async="async" defer="defer"></script>
+            </div>
+        </div><!-- /.sns-wrap -->
+        <p class="copy"><small>&copy;Necopon games</small></p>
+    </footer>
+
+    <!-----------------------------------------------------------------------
+                               SP用フッターページ
+    ------------------------------------------------------------------------->
+    <div class="sp-btn">
+        <a href="#mv" class="page-link playnow">PLAY NOW</a>
+    </div>
+
+    <!-- JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
