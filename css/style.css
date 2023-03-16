@@ -537,6 +537,9 @@ SP用　メディアクエリー
         font-size: 0.65rem;
         padding: 12px 10px;
     }
+    .playnow:hover{
+        box-shadow: none;
+    }
     .nav-item>.playnow{
         display: none;
     }
