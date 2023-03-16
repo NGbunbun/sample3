@@ -247,8 +247,8 @@ body {
 /* 描画位置 */
 .scrolldown{
     position: absolute;
-    bottom: 25px;
-    left: 1%;
+    bottom: 4%;
+    left: 2%;
 }
 /* テキスト描写 */
 .scrolldown span{
@@ -550,8 +550,8 @@ SP用　メディアクエリー
     }
     /* タイトル部分 */
     .top-title-wrap{
-        padding-top: 175px;
-        padding-left: 35px;
+        padding-top: 43%;
+        padding-left: 6%;
     }
     .top-title-wrap h1{
         font-size: 3.8rem;
@@ -571,8 +571,8 @@ SP用　メディアクエリー
     }
     /* ニュースボックス */
     .news-box{
-        right: 30px;
-        bottom: 50px;
+        right: 5%;
+        bottom: 5%;
         padding: 0.2rem 0;
         width: 200px;
         margin-bottom: 15px;
